@@ -86,9 +86,8 @@ def pantalla_game_over():
 
 def pantalla_victoria():
     ventana.blit(imagen_ganar, (0, 0))  # Fondo solo al ganar
-    mostrar_texto("¡FELICITACIONES, GANASTEIS!", fuente, BLANCO, 50, 150)
-    mostrar_texto(f"Puntaje final: {puntaje}", fuente_peque, BLANCO, 200, 220)
-    mostrar_texto("Presiona R para reiniciar", fuente_peque, BLANCO, 170, 300)
+    mostrar_texto(f"Puntaje final: {puntaje}", fuente_peque, NEGRO, 200, 250)
+    mostrar_texto("Presiona R para reiniciar", fuente_peque, NEGRO, 170, 300)
     pygame.display.flip()
 
 def reiniciar_juego():
